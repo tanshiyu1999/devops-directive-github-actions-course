@@ -23,7 +23,7 @@ jobs:
         with:
           who-to-greet: "from an action in the GitHub Action marketplace! 👋"
 
-  say-hello-inline-namespace:
+  say-hello-inline-namespace-2:
     runs-on: namespace-profile-default
     steps:
       - run: echo "Hello from an inline bash script in a GitHub Action Workflow!"
