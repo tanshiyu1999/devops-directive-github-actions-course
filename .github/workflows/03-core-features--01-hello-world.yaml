@@ -22,3 +22,8 @@ jobs:
         # - uses: actions/hello-world-javascript-action@v1 # This would work, but it would be less stable and less secure:
         with:
           who-to-greet: "from an action in the GitHub Action marketplace! 👋"
+
+  say-hello-inline-namespace:
+    runs-on: namespace-profile-default
+    steps:
+      - run: echo "Hello from an inline bash script in a GitHub Action Workflow!"
