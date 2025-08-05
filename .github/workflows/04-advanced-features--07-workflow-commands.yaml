@@ -1,10 +1,6 @@
 name: Workflow Commands
 
 on:
-  pull_request:
-  push:
-    branches:
-      - sp/workflow-commands
   workflow_dispatch:
 
 jobs:
