@@ -19,7 +19,8 @@ jobs:
           # Debug output (visible only when repo secret ACTIONS_STEP_DEBUG=true)
           echo "::debug::Step started - hello from debug"
 
-          echo "::notice file=README.md,line=1::By specifying a line (and optionally a column) the notice is linked to the source file"
+          file=".github/workflows/04-advanced-features--07-workflow-commands.yaml"
+          echo "::notice file=$file,line=23::By specifying a line (and optionally a column) the notice is linked to the source file"
 
           echo "::warning title=Some Warning::A more detailed description of the warning"
 
