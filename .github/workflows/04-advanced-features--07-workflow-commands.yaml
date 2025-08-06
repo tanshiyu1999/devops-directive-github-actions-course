@@ -26,7 +26,7 @@ jobs:
           # Fails the run visually, but does **not** stop execution (you should `exit 1` to stop execution)
           echo "::error title=Some Error::A more detailed description of the error"
 
-          echo "::error file=app.js,line=1::Missing emicolon"
+          echo "::error file=app.js,line=1::Missing semicolon"
 
       - name: Grouped logs
         run: |
