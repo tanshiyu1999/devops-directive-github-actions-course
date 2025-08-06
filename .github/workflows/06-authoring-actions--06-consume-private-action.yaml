@@ -1,0 +1,12 @@
+name: Consume Action from Private Repo
+
+on:
+  push:
+    branches: [sp/add-private-action-consumer]
+  workflow_dispatch:
+
+jobs:
+  run-private-action:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: sidpalas/private-repo-with-github-action/.github/actions/private-action@75a2c396af6a80538420574200cfa9aa373951b9
